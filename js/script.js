@@ -14,21 +14,21 @@ const songs = [
     {
         name: 'Selfless',
         artist: 'The Strokes',
-        fileName: 'song-1',
-        img: 'jpeg'
+        fileName: './music/song-1.mp3',
+        img: './img/song-1.jpeg'
 
     },
     {
         name: 'Leave It In My Dreams',
         artist: 'The Voidz',
-        fileName: 'song-2',
-        img: 'jpg'
+        fileName: './music/song-2.mp3',
+        img: './img/song-2.jpg'
     },
     {
         name: 'Threat of Joy',
         artist: 'The Strokes',
-        fileName: 'song-3',
-        img: 'png'
+        fileName: './music/song-3.mp3',
+        img: './img/song-3.png'
     }
 ];
 
@@ -54,8 +54,9 @@ playBtn.addEventListener('click', () => {(isPlayed ? pauseSong() : playSong())})
 function loadSong(song) {
     title.textContent = song.name;
     artist.textContent = song.artist;
-    music.src = `./music/${song.fileName}.mp3`;
-    img.src = `./img/${song.fileName}.${song.img}`;
+    music.src = song.fileName;
+    img.src = song.img;
+    img.alt = `${song.name} - ${song.artist}`;
 }
 
 function prevSong() {
