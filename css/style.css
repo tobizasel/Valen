@@ -1,5 +1,4 @@
 /* Images created by: https://unsplash.com/@pawel_czerwinski */
-
 html {
   box-sizing: border-box;
 }
@@ -7,20 +6,28 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background: #c9ced3;
+  background-image: url("../img/heart-bg.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 12px;
 }
+@media screen and (max-width: 930px) {
+  body {
+    background-image: url("../img/heartsmall.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+  }
+}
 
-.player-container{
+.player-container {
   height: 500px;
   width: 400px;
-  background-color: #b9bdc4;
+  background-color: #FEC5BB;
   border-radius: 20px;
-  box-shadow: 0 15px 30px 5px rgba(0, 0, 0, .3);
+  box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
 }
 
 .img-container {
@@ -31,14 +38,13 @@ body {
   left: 50px;
 }
 
-.img-container img{
+.img-container img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 20px;
-  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, .3);
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.3);
 }
-
 
 h2 {
   font-size: 25px;
@@ -55,7 +61,7 @@ h3 {
 
 /* Progress */
 .progress-container {
-  background: #fff;
+  background: #D8E2DC;
   border-radius: 5px;
   cursor: pointer;
   margin: 40px 20px;
@@ -64,7 +70,7 @@ h3 {
 }
 
 .progress {
-  background: #242323;
+  background: #F08080;
   border-radius: 5px;
   height: 100%;
   /* change this to show progress */
@@ -94,7 +100,7 @@ h3 {
   cursor: pointer;
 }
 
-.fas:hover{
+.fas:hover {
   color: #161616;
 }
 
@@ -105,14 +111,16 @@ h3 {
 }
 
 /* Media Query: iPhone (Vertical) */
-@media screen and (max-width: 376px) {
-
-  .player-container{
-    width: 95vw;
+@media screen and (max-width: 544px) {
+  .player-container {
+    margin-top: 100px;
+    height: 400px;
+    width: 60vw;
   }
 
   .img-container {
-    left: 29px;
+    height: 200px;
+    width: 200px;
   }
 
   h2 {
@@ -128,3 +136,24 @@ h3 {
     left: 100px;
   }
 }
+@media screen and (max-width: 474px) {
+  .player-container {
+    width: 80vw;
+  }
+
+  .img-container {
+    left: 85px;
+  }
+}
+@media screen and (max-width: 474px) {
+  .img-container {
+    left: 65px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .img-container {
+    left: 55px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

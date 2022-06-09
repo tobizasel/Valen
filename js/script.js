@@ -11,25 +11,123 @@ const currentTimeEl = document.getElementById('current-time');
 const songDuration = document.getElementById('duration');
 
 const songs = [
-    {
-        name: 'Selfless',
-        artist: 'The Strokes',
-        fileName: './music/song-1.mp3',
-        img: './img/song-1.jpeg'
 
+    {
+        name: 'Are You Bored Yet?',
+        artist: 'Wallows',
+        fileName: './music/song-1.mp3',
+        img: './img/song-1.jpg'
     },
     {
-        name: 'Leave It In My Dreams',
-        artist: 'The Voidz',
+        name: 'Just The Way You Are',
+        artist: 'Bruno Mars',
         fileName: './music/song-2.mp3',
         img: './img/song-2.jpg'
     },
     {
-        name: 'Threat of Joy',
-        artist: 'The Strokes',
+        name: 'Hold Me Down',
+        artist: 'The Happy Fits',
         fileName: './music/song-3.mp3',
-        img: './img/song-3.png'
-    }
+        img: './img/song-3.jpg'
+    },
+    {
+        name: 'Cigarette Daydreams',
+        artist: 'Cage The Elephant',
+        fileName: './music/song-4.mp3',
+        img: './img/song-4.jpg'
+    },
+    {
+        name: 'Perfect',
+        artist: 'Ed Sheeran',
+        fileName: './music/song-5.mp3',
+        img: './img/song-5.jpg'
+    },
+    {
+        name: 'Sunflower',
+        artist: 'Rex Orange County',
+        fileName: './music/song-6.mp3',
+        img: './img/song-6.jpg'
+    },
+    {
+        name: 'Ordinary World',
+        artist: 'Green Day',
+        fileName: './music/song-7.mp3',
+        img: './img/song-7.jpg'
+    },
+    {
+        name: 'Cloud 9',
+        artist: 'Beach Bunny',
+        fileName: './music/song-8.mp3',
+        img: './img/song-8.jpg'
+    },
+    {
+        name: 'Bruja De Barracas',
+        artist: 'Conociendo Rusia',
+        fileName: './music/song-9.mp3',
+        img: './img/song-9.jpg'
+    },
+    {
+        name: 'Montaña Infinita',
+        artist: 'Cabildo Y Juramento',
+        fileName: './music/song-11.mp3',
+        img: './img/song-11.jpg'
+    },
+    {
+        name: 'Selfless',
+        artist: 'The Strokes',
+        fileName: './music/song-12.mp3',
+        img: './img/song-12.jpeg'
+    },
+    {
+        name: 'P.Y.T (Pretty Young Thing)',
+        artist: 'Michael Jackson',
+        fileName: './music/song-13.mp3',
+        img: './img/song-13.jpg'
+    },
+    {
+        name: 'Best Friend',
+        artist: 'Rex Orange County',
+        fileName: './music/song-14.mp3',
+        img: './img/song-14.jpg'
+    },
+    {
+        name: 'Amazing',
+        artist: 'Rex Orange County',
+        fileName: './music/song-15.mp3',
+        img: './img/song-15.jpg'
+    },
+    {
+        name: 'The Way You Make Me Feel',
+        artist: 'Michael Jackson',
+        fileName: './music/song-16.mp3',
+        img: './img/song-16.jpg'
+    },
+    {
+        name: 'Television / So Far So Good',
+        artist: 'Rex Orange County',
+        fileName: './music/song-17.mp3',
+        img: './img/song-17.jpg'
+    },
+    {
+        name: 'Happiness',
+        artist: 'Rex Orange County',
+        fileName: './music/song-18.mp3',
+        img: './img/song-17.jpg'
+    },
+    {
+        name: 'Noche Loca',
+        artist: 'Marama',
+        fileName: './music/song-20.mp3',
+        img: './img/song-20.jpg'
+    },
+    {
+        name: 'Shut Up And Dance',
+        artist: 'Walk The Moon',
+        fileName: './music/song-23.mp3',
+        img: './img/song-23.jpg'
+    },
+
+
 ];
 
 let isPlayed = false;
@@ -37,14 +135,14 @@ let actualSong = 0;
 
 function playSong() {
     isPlayed = true;
-    playBtn.classList.replace('fa-play' , 'fa-pause');
+    playBtn.classList.replace('fa-heart' , 'fa-pause');
     playBtn.setAttribute('title' , 'Pause');
     music.play();
 }
 
 function pauseSong() {
     isPlayed = false
-    playBtn.classList.replace('fa-pause' , 'fa-play')
+    playBtn.classList.replace('fa-pause' , 'fa-heart')
     playBtn.setAttribute('title' , 'play');
     music.pause();
 }
